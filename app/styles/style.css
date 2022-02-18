@@ -424,7 +424,7 @@ body main .about_me .container3 li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: none;
+  cursor: pointer;
 }
 
 body main .about_me .container3 li:nth-child(even) {

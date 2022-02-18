@@ -245,7 +245,7 @@ body{
                     font-weight:500;
                     font-size:18px;
                     @include flex;
-                    cursor:none;
+                    cursor:pointer;
                     &:nth-child(even){
                         animation: shake1 2s infinite;
                     }
