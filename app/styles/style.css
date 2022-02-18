@@ -309,7 +309,7 @@ body main .about_me .container1 h2 {
 body main .about_me .container1 p {
   margin-top: 20px;
   text-align: justify;
-  font-size: 20px;
+  font-size: 22px;
   font-family: serif;
 }
 
@@ -424,6 +424,7 @@ body main .about_me .container3 li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: none;
 }
 
 body main .about_me .container3 li:nth-child(even) {

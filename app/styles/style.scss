@@ -244,9 +244,8 @@ body{
                     font-family: monospace;
                     font-weight:500;
                     font-size:18px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex;
+                    cursor:none;
                     &:nth-child(even){
                         animation: shake1 2s infinite;
                     }
