@@ -4,6 +4,8 @@ var scrollBtn = document.querySelector(".scrollBtn");
 var home = document.querySelector("#homeNav");
 var about = document.querySelector("#aboutNav");
 var contact = document.querySelector("#contactNav");
+var winSize = screen.width;
+
 
 scrollBtn.style.opacity = "0%";
 scrollBtn.addEventListener("click", function () {

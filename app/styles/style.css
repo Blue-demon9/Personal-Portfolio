@@ -148,9 +148,12 @@ body {
 
 body header {
   background-color: rgba(15, 23, 37, 0.89);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -193,8 +196,8 @@ body header .logo h1 {
 }
 
 body header .navElements {
-  width: 35%;
-  margin-left: 650pt;
+  width: 75%;
+  margin-left: auto;
 }
 
 body header .navElements li {
@@ -325,7 +328,7 @@ body main .about_me .container1 p a {
 
 body main .about_me .container2 {
   width: 100%;
-  height: 500px;
+  height: 800px;
 }
 
 body main .about_me .container2 h2 {
@@ -618,5 +621,15 @@ body footer p {
 
 body footer p span {
   margin-left: 30px;
+}
+
+@media only screen and (mix-width: 700px) {
+  header {
+    height: 50px;
+  }
+  main .home {
+    height: 200px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

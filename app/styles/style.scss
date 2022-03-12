@@ -1,7 +1,7 @@
-@mixin flex{
+@mixin flex($justify:center,$align:center){
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:$justify;
+    align-items: $align;
 }
 @mixin topics($color){
     text-align:center;
@@ -34,6 +34,10 @@
     95%{background:rgba(255, 134, 86, 0.548);}
     100%{background:rgba(241, 53, 131, 0.637);}
 }
+
+html{
+    scroll-behavior: smooth;
+}
 *{
     display:flex-box;
     margin:0;
@@ -44,8 +48,7 @@ body{
     background-color: rgba(223, 226, 230, 0.513);
     header{
         background-color:rgba(15, 23, 37, 0.89);
-        justify-content: center;
-        align-items: center;
+        @include flex(flex-start);
         position:fixed;
         width:100%;
         height:70px;
@@ -72,8 +75,8 @@ body{
         }
         
         .navElements{
-            width:35%;
-            margin-left:650pt;
+            width:75%;
+            margin-left:auto;
             li{
                 list-style:none;
                 float:left;
@@ -181,7 +184,7 @@ body{
             }
             .container2{
                 width:100%;
-                height:500px;
+                height:800px;
 
                 h2{
                     @include topics(rgba(19, 18, 18, 0.938));
@@ -389,6 +392,18 @@ body{
             span{
                 margin-left:30px;
             }
+        }
+    }
+}
+
+@media only screen and (mix-width:700px){
+    header{
+        height:50px;
+    }
+    main{
+        .home{
+            height:200px;
+            width:100%;
         }
     }
 }
